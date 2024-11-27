@@ -1,13 +1,13 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
+    username: admin
     password: psb011031!
-    url: jdbc:mysql://localhost:3306/login-project?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://database-ex.cxua8wo0mbwg.ap-northeast-2.rds.amazonaws.com/mydatabase?serverTimezone=Asia/Seoul
   jpa:
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         order_inserts: true
